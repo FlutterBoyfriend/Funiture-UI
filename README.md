@@ -3,7 +3,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0+1-blue.svg?cacheSeconds=2592000)
 [![License: APACHE](https://img.shields.io/badge/License-APACHE-yellow.svg)](#)
 
-a Furniture app ui built with Flutter
+A Furniture App UI built with Flutter
 
 # Flutter Version
 Flutter 1.22.4

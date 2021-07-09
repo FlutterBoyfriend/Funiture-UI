@@ -27,6 +27,23 @@ class SheetBottom extends StatelessWidget {
     );
   }
 
+  Widget kCustomTile({String itemName, String price}) {
+    return Container(
+      height: 40.h,
+      width: double.infinity,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(itemName, style: kBoldStyle()),
+          Text(
+            price,
+            style: kBottomStyle(),
+          )
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -43,7 +60,7 @@ class SheetBottom extends StatelessWidget {
           SizedBox(height: 10.h),
           customTile(itemName: "Laya Chair", price: "\$3,28"),
           SizedBox(height: 20.h),
-          customTile(itemName: "Total", price: "\$11,26"),
+          kCustomTile(itemName: "Total", price: "\$11,26"),
           SizedBox(height: 25.h),
           PrimaryButton(
             btnText: "Checkout",
@@ -65,5 +82,10 @@ class SheetBottom extends StatelessWidget {
   TextStyle kProductStyle() {
     return TextStyle(
         color: Colors.grey, fontSize: 20.sp, fontWeight: FontWeight.w600);
+  }
+
+  TextStyle kBoldStyle() {
+    return TextStyle(
+        color: kTextColor, fontSize: 20.sp, fontWeight: FontWeight.bold);
   }
 }

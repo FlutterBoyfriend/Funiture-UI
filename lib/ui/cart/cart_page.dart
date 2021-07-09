@@ -5,7 +5,6 @@ import 'package:furniture_app_ui/utils/constant.dart';
 import 'package:furniture_app_ui/utils/helper.dart';
 import 'package:furniture_app_ui/widgets/appbar_icon.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:furniture_app_ui/widgets/primary_button.dart';
 
 class Cart extends StatelessWidget {
   //open modal botoom sheet
@@ -48,30 +47,23 @@ class Cart extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 5.w),
             child: AppbarIcon(
-              onPressed: () {
-                //add to favorite
-              },
-              icon: Icons.delete_outline,
-            ),
+                onPressed: () {
+                  //add to favorite
+                },
+                icon: Icons.delete_outline_sharp),
           ),
         ],
       ),
       backgroundColor: theme.backgroundColor,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
-        child: Column(
-          children: [
-            CartProduct(),
-            PrimaryButton(
-              btnText: "Confirm",
-              onPressed: () {
-                //open sheetsss
-
-                showModalSheet(context);
-              },
-            )
-          ],
-        ),
+        child: CartProduct(),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.payment, color: theme.backgroundColor),
+        onPressed: () {
+          showModalSheet(context);
+        },
       ),
     );
   }

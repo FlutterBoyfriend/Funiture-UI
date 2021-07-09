@@ -55,11 +55,11 @@ class _MyHomePageState extends State<MyHomePage> {
         onPageChanged: onItemTapped,
       ),
       bottomNavigationBar: ConvexAppBar(
+        height: 50.h,
         elevation: 0,
         onTap: onChanged,
         initialActiveIndex: selectedIndex,
         backgroundColor: theme.backgroundColor,
-        style: TabStyle.flip,
         curveSize: 0,
         activeColor: theme.primaryColor,
         items: [
