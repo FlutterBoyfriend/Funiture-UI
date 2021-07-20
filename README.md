@@ -18,9 +18,8 @@ Flutter 1.22.4
 
 # Screenshots
 
-||||
-|--|--|--|
-| ![Dribble](./demo/dribble.png)
+
+![Dribble](./demo/dribble.png)
 
 # Command
 ### Install dependencies
