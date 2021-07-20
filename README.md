@@ -1,7 +1,7 @@
 # Furniture App UI Kit 👋
 
 ![Version](https://img.shields.io/badge/version-1.0.0+1-blue.svg?cacheSeconds=2592000)
-[![License: APACHE](https://img.shields.io/badge/License-APACHE-yellow.svg)](#)
+[![License: APACHE](https://img.shields.io/badge/License-MIT-amber.svg)](#)
 
 A Furniture App UI built with Flutter
 
